@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Ban YouTube Feed",
+  "version": "1.0.0",
+  "description": "Hide YouTube homepage feed and video page sidebar recommendations. Stay focused.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
