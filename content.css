@@ -19,16 +19,15 @@ ytd-browse[page-subtype="home"] ytd-rich-section-renderer {
 }
 
 /* === VIDEO PAGE: Hide right sidebar recommendations === */
-
-#secondary {
-  display: none !important;
-}
+/* Only hide #related (recommendations), not #secondary entirely,
+   so the transcript panel (which lives inside #secondary) still works. */
 
 #related {
   display: none !important;
 }
 
-#secondary-inner {
+/* Hide chat replay and other recommendation widgets in sidebar */
+ytd-watch-flexy #secondary ytd-compact-autoplay-renderer {
   display: none !important;
 }
 
