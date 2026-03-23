@@ -83,12 +83,7 @@ ytd-guide-subscriptions-section-renderer {
   display: none !important;
 }
 
-/* The subscriptions section is the second guide section */
-ytd-guide-renderer #sections > ytd-guide-section-renderer:nth-child(2) {
-  display: none !important;
-}
-
-/* Also try collapsible section renderer used for subscriptions */
+/* Subscriptions uses a collapsible section in the sidebar */
 ytd-guide-collapsible-section-entry-renderer {
   display: none !important;
 }
