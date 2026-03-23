@@ -55,7 +55,15 @@ ytd-watch-flexy[flexy] #player-theater-container {
   display: none !important;
 }
 
-/* === FULLSCREEN: Hide recommendations when scrolling down === */
+/* === FULLSCREEN: Disable scrolling entirely === */
+
+ytd-watch-flexy[fullscreen] {
+  overflow: hidden !important;
+}
+
+ytd-watch-flexy[fullscreen] #page-manager {
+  overflow: hidden !important;
+}
 
 ytd-watch-flexy[fullscreen] #below {
   display: none !important;
@@ -69,12 +77,22 @@ ytd-watch-flexy[fullscreen] #comments {
   display: none !important;
 }
 
-/* Hide the "scroll for more" indicator and fullscreen engagement panels */
+/* Hide the scroll indicator, shadow overlay, and suggestions */
 .ytp-fullerscreen-edu-text {
   display: none !important;
 }
 
+.ytp-fullerscreen-edu-chevron {
+  display: none !important;
+}
+
 .ytp-suggestion-set {
+  display: none !important;
+}
+
+/* Hide the scroll-down shadow/gradient overlay */
+#ytd-player .ytp-scroll-min,
+#ytd-player .ytp-scroll-max {
   display: none !important;
 }
 
