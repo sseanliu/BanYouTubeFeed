@@ -77,13 +77,13 @@ ytd-watch-flexy[fullscreen] #comments {
   display: none !important;
 }
 
-/* === SIDEBAR: Hide subscriptions channel list === */
+/* === SIDEBAR: Hide entire guide sidebar === */
 
-ytd-guide-subscriptions-section-renderer {
+ytd-guide-renderer {
   display: none !important;
 }
 
-/* Subscriptions uses a collapsible section in the sidebar */
-ytd-guide-collapsible-section-entry-renderer {
+/* Also hide the mini sidebar */
+ytd-mini-guide-renderer {
   display: none !important;
 }
