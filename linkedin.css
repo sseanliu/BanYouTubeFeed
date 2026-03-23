@@ -1,0 +1,36 @@
+/* Ban LinkedIn Feed */
+
+/* Hide the main feed */
+.scaffold-finite-scroll,
+.feed-shared-update-v2,
+div.feed-sort-header,
+div[data-finite-scroll-hotkey-context="FEED"] {
+  display: none !important;
+}
+
+/* Hide the "Start a post" box */
+.share-box-feed-entry__closed-share-box,
+.share-box-feed-entry__top-bar,
+.feed-shared-share-box {
+  display: none !important;
+}
+
+/* Hide the entire main feed container */
+main.scaffold-layout__main > div:first-child {
+  display: none !important;
+}
+
+/* Hide LinkedIn News / right sidebar */
+aside.scaffold-layout__aside {
+  display: none !important;
+}
+
+/* Hide "Promoted" / ads in feed */
+.feed-shared-actor__sub-description:has(span:contains("Promoted")) {
+  display: none !important;
+}
+
+/* Hide "Sort by" controls */
+.artdeco-dropdown--is-dropdown {
+  display: none !important;
+}
