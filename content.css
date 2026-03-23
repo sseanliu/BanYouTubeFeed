@@ -82,3 +82,18 @@ ytd-watch-flexy[fullscreen] #comments {
 ytd-guide-subscriptions-section-renderer {
   display: none !important;
 }
+
+/* Hide subscription section in guide sidebar (expanded) */
+ytd-guide-renderer #sections > ytd-guide-section-renderer:has(> h3 > #guide-section-title) {
+  display: none !important;
+}
+
+/* Also target by the "Subscriptions" heading text */
+ytd-guide-section-renderer:has(#guide-section-title[title="Subscriptions"]) {
+  display: none !important;
+}
+
+/* Hide subscription entries in mini sidebar */
+ytd-mini-guide-renderer ytd-mini-guide-entry-renderer[aria-label="Subscriptions"] {
+  display: none !important;
+}
