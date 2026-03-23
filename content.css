@@ -53,3 +53,26 @@ ytd-watch-flexy[flexy] #player-theater-container {
 .ytp-ce-video {
   display: none !important;
 }
+
+/* === FULLSCREEN: Hide recommendations when scrolling down === */
+
+ytd-watch-flexy[fullscreen] #below {
+  display: none !important;
+}
+
+ytd-watch-flexy[fullscreen] #secondary {
+  display: none !important;
+}
+
+ytd-watch-flexy[fullscreen] #comments {
+  display: none !important;
+}
+
+/* Hide the "scroll for more" indicator and fullscreen engagement panels */
+.ytp-fullerscreen-edu-text {
+  display: none !important;
+}
+
+.ytp-suggestion-set {
+  display: none !important;
+}
