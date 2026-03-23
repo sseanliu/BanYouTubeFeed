@@ -18,20 +18,6 @@ ytd-browse[page-subtype="home"] ytd-rich-section-renderer {
   display: none !important;
 }
 
-/* Show "Focus" message on homepage */
-ytd-browse[page-subtype="home"]::before {
-  content: "Focus";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 60vh;
-  font-size: 48px;
-  font-weight: 300;
-  letter-spacing: 8px;
-  color: #555;
-  text-transform: uppercase;
-}
 
 /* === VIDEO PAGE: Hide right sidebar recommendations === */
 /* Use visibility:hidden + collapse instead of display:none so YouTube's JS
