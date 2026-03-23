@@ -77,12 +77,24 @@ ytd-watch-flexy[fullscreen] #comments {
   display: none !important;
 }
 
-/* Hide the scroll indicator, shadow overlay, and suggestions */
+/* Hide the scroll indicator, shadow overlay, chevron, and "More videos" button */
 .ytp-fullerscreen-edu-text {
   display: none !important;
 }
 
 .ytp-fullerscreen-edu-chevron {
+  display: none !important;
+}
+
+button[aria-label="More videos"],
+button[aria-label="More videos (v)"],
+.ytp-fullerscreen-edu-button {
+  display: none !important;
+}
+
+/* Hide the up-arrow chevron at bottom of player */
+.ytp-scroll-min-arrow,
+.ytp-scroll-max-arrow {
   display: none !important;
 }
 
