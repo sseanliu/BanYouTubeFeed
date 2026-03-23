@@ -76,3 +76,9 @@ ytd-watch-flexy[fullscreen] #comments {
 .ytp-suggestion-set {
   display: none !important;
 }
+
+/* === SIDEBAR: Hide subscriptions channel list === */
+
+ytd-guide-subscriptions-section-renderer {
+  display: none !important;
+}
